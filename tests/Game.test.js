@@ -30,14 +30,14 @@ describe('Game class', () => {
             fillText: jest.fn(),
         };
         canvasMock.getContext = jest.fn().mockReturnValue(ctxMock);
-        game = new Game('canvas1', 800, 1000, null, null, null, enemy);
+        game = new Game('canvas1', 800, 800, null, null, null, enemy);
     });
 
     it('should initialize with correct properties', () => {
         expect(game.canvas).toBe(canvasMock);
         expect(game.ctx).toBe(ctxMock);
         expect(game.CANVAS_WIDTH).toBe(800);
-        expect(game.CANVAS_HEIGHT).toBe(1000);
+        expect(game.CANVAS_HEIGHT).toBe(800);
         expect(game.enemiesUpdated).toBe(null);
         expect(game.namePlayer).toBe(null);
         expect(game.lastHit).toBe(null);

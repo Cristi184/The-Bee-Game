@@ -30,7 +30,7 @@ describe('Hit class', () => {
             fillText: jest.fn(),
         };
         canvasMock.getContext = jest.fn().mockReturnValue(ctxMock);
-        game = new Game('canvas1', 800, 1000, null, null, null, enemy);
+        game = new Game('canvas1', 800, 800, null, null, null, enemy);
 
         // Mock window.alert
         jest.spyOn(window, 'alert').mockImplementation(() => {});

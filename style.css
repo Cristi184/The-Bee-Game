@@ -1,35 +1,39 @@
 /* Canvas Styles */
 #canvas1 {
     border: 3px solid black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 1000px;
+    height: 800px;
     width: 800px;
     background-color: #f0e68c; /* Light yellow background to resemble a honeycomb */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    position: relative;
+    margin: 0 auto; /* Center horizontally */
+    padding-top: 20px; /* Add padding to the top */
 }
 
 /* Player Name Section */
 .player-name {
-    position: fixed;
-    left: 50%;
-    top: 200px;
-    transform: translate(-50%, -50%);
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    margin-top: 20px;
-    display: block;
     text-align: center;
     color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between name and input */
+    position: absolute;
+    top:250px;
 }
 
+/* Input Name */
 .input-name {
     padding: 10px;
     border: 2px solid #555;
     border-radius: 5px;
     font-size: 16px;
-    margin-top: 10px;
+    margin-bottom: 20px; /* Space between input and other elements */
 }
 
 /* Button Styles */
@@ -53,11 +57,16 @@ button:active {
 }
 
 #save_name {
-    position: fixed;
-    left: 50%;
-    top: 300px;
-    transform: translate(-50%, -50%);
     width: 200px;
+    display: block;
+    margin: 20px auto; /* Center horizontally */
+}
+
+#hit {
+    position: absolute;
+    bottom: 50px; /* Position above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #hit:active {
@@ -66,17 +75,23 @@ button:active {
 
 /* Last Hit Section */
 #last_hit {
-    position: fixed;
-    left: 50%;
-    top: 1050px;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* Wrapper for Bottom Buttons */
 .wrapper_bottom_buttons {
-    position: fixed;
-    left: 50%;
-    top: 1100px;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    position: relative;
+    top: -50px;
     display: none;
+}
+
+/* Flexbox Container */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }

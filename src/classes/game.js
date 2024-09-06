@@ -70,7 +70,7 @@ export class Game {
             if (enemyData) {
                 for (let i = 0; i < (e.number || 1); i++) {
                     const { x, y } = this.getRandomPosition();
-                    this.enemies.push(new Bee(e.type, enemyData.health, e.health, e.hit_damage, `src/assets/${e.type.toLowerCase()}.png`, this, e.x ? e.x : x, e.y ? e.y : y));
+                    this.enemies.push(new Bee(e.type, enemyData.health, e.health, e.hitDamage, `src/assets/${e.type.toLowerCase()}.png`, this, e.x ? e.x : x, e.y ? e.y : y));
                 }
             }
         });

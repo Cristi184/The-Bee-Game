@@ -1,8 +1,8 @@
 export class Bee {
-    constructor(type,maxHealth,  health, hit_damage, imageSrc, game,x ,y) {
+    constructor(type,maxHealth,  health, hitDamage, imageSrc, game,x ,y) {
         this.maxHealth = maxHealth; // Store the maximum health
         this.health = health;
-        this.hit_damage = hit_damage;
+        this.hitDamage = hitDamage;
         this.type = type;
         this.image = new Image();
         this.image.src = imageSrc;

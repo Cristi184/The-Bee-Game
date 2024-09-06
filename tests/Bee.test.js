@@ -29,7 +29,7 @@ describe('Bee class', () => {
         expect(bee.type).toBe('Worker');
         expect(bee.maxHealth).toBe(100);
         expect(bee.health).toBe(50);
-        expect(bee.hit_damage).toBe(10);
+        expect(bee.hitDamage).toBe(10);
         expect(bee.x).toBe(100);
         expect(bee.y).toBe(200);
         expect(bee.color).toBe('green');

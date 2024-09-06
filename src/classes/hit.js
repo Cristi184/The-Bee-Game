@@ -15,8 +15,8 @@ export class Hit {
         if (this.game.enemies.length > 0) {
             const randomIndex = Math.floor(Math.random() * this.game.enemies.length);
             const selectedBee = this.game.enemies[randomIndex];
-            const hitDamage = selectedBee.hit_damage; // Use hit_damage property
-            selectedBee.health = Math.max(0, selectedBee.health - selectedBee.hit_damage); // Ensure health doesn't go below 0
+            const hitDamage = selectedBee.hitDamage; // Use hitDamage property
+            selectedBee.health = Math.max(0, selectedBee.health - selectedBee.hitDamage); // Ensure health doesn't go below 0
 
             // Update the last hit information
             this.updateLastHit(selectedBee.type, hitDamage);

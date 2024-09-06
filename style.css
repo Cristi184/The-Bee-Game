@@ -1,0 +1,82 @@
+/* Canvas Styles */
+#canvas1 {
+    border: 3px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1000px;
+    width: 800px;
+    background-color: #f0e68c; /* Light yellow background to resemble a honeycomb */
+}
+
+/* Player Name Section */
+.player-name {
+    position: fixed;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    color: #333;
+}
+
+.input-name {
+    padding: 10px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+button {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    border: 2px solid #555; /* Border to give a solid look */
+    padding: 10px 20px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px #999; /* Shadow for 3D effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+button:active {
+    background-color: #555; /* Darker background on click */
+    box-shadow: 0 2px #666; /* Reduce shadow on click */
+}
+
+#save_name {
+    position: fixed;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+#hit:active {
+    background-color: #ff0000; /* Move down on click */
+}
+
+/* Last Hit Section */
+#last_hit {
+    position: fixed;
+    left: 50%;
+    top: 1050px;
+    transform: translate(-50%, -50%);
+}
+
+/* Wrapper for Bottom Buttons */
+.wrapper_bottom_buttons {
+    position: fixed;
+    left: 50%;
+    top: 1100px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
